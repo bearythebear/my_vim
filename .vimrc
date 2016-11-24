@@ -70,6 +70,8 @@ vnoremap <D-k> :m '<-2<CR>gv=gv
 map <space> /
 map <M-space> ?
 
+map <C-c> :BD<cr>
+
 let g:jedi#completions_command = "<C-A>"
 let g:jedi#popup_on_dot = 0
 
