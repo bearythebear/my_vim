@@ -41,7 +41,10 @@ set relativenumber
 set autoread
 set incsearch
 set so=7
-
+set guioptions -=l
+set guioptions -=L
+set guioptions -=r
+set guioptions -=R
 autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 
 set statusline+=%#warningmsg#
