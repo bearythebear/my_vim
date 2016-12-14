@@ -73,12 +73,13 @@ vnoremap <D-j> :m '>+1<CR>gv=gv
 vnoremap <D-k> :m '<-2<CR>gv=gv
 
 map <space> /
-map <M-space> ?
+map <S-space> ?
 
 map <C-c> :BD<cr>
 
 let g:jedi#completions_command = "<C-A>"
 let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = "0"
 
 let g:NERDDefaultAlign = 'left'
 
