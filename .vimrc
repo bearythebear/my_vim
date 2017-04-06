@@ -85,3 +85,4 @@ let g:NERDDefaultAlign = 'left'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:indentLine_color_gui = '#4c4c4b'
