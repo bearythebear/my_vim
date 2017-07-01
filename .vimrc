@@ -1,3 +1,10 @@
+let g:pathogen_disabled = []
+
+"if has('nvim')
+"    call add(g:pathogen_disabled, 'jedi-vim')
+"else
+"    call add(g:pathogen_disabled, 'deoplete')
+"endif
 execute pathogen#infect()
 execute pathogen#helptags()
 
@@ -7,7 +14,7 @@ set background=dark
 colorscheme onedark 
 if (has("termguicolors"))
     set termguicolors
-  endif
+endif
 if (exists('+colorcolumn'))
     set colorcolumn=80
     highlight ColorColumn ctermbg=9
@@ -41,6 +48,7 @@ set relativenumber
 set autoread
 set incsearch
 set so=7
+set noswapfile
 if has('gui_running')
     set guioptions -=l
     set guioptions -=L
@@ -75,13 +83,40 @@ vnoremap <D-k> :m '<-2<CR>gv=gv
 map <space> /
 map <S-space> ?
 
+"Auto-format json file with jq
+map <leader>jq :%!jq '.'<CR>
+
+"Diff the unsaved changes
+map <leader>diff :w !diff % -<CR>
+
 map <C-c> :BD<cr>
 
-let g:jedi#completions_command = "<C-A>"
-let g:jedi#popup_on_dot = 0
-let g:jedi#show_call_signatures = "0"
+map <C-n> :NERDTreeToggle<CR>
+
+if has('nvim')
+    let g:deoplete#enable_at_startup = 1
+    autocmd CompleteDone * pclose!
+    let g:deoplete#disable_auto_complete = 1
+    
+    "sick tab mapping:
+    inoremap <silent><expr> <TAB>
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<TAB>" :
+        \ deoplete#mappings#manual_complete()
+    function! s:check_back_space() abort "{{{
+        let col = col('.') - 1
+        return !col || getline('.')[col - 1]  =~ '\s'
+    endfunction"}}}
+
+"else
+    let g:jedi#completions_command = "<C-A>"
+    let g:jedi#popup_on_dot = 0
+    let g:jedi#show_call_signatures = "0"
+endif
 
 let g:NERDDefaultAlign = 'left'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:indentLine_setConceal = 0
+let g:indentLine_char = '|'

@@ -1,37 +1,52 @@
-[submodule ".vim/bundle/jedi-vim"]
-	path = .vim/bundle/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
+    path = .vim/bundle/nerdcommenter
+    url = https://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/onedark.vim"]
-	path = .vim/bundle/onedark.vim
-	url = https://github.com/joshdick/onedark.vim.git
+    path = .vim/bundle/onedark.vim
+    url = https://github.com/joshdick/onedark.vim.git
 [submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
+    path = .vim/bundle/syntastic
+    url = https://github.com/vim-syntastic/syntastic.git
 [submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
+    path = .vim/bundle/vim-airline
+    url = https://github.com/vim-airline/vim-airline.git
 [submodule ".vim/bundle/vim-multiple-cursors"]
-	path = .vim/bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
+    path = .vim/bundle/vim-multiple-cursors
+    url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule ".vim/bundle/vim-polyglot"]
-	path = .vim/bundle/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
+    path = .vim/bundle/vim-polyglot
+    url = https://github.com/sheerun/vim-polyglot.git
 [submodule ".vim/bundle/vim-bufkill"]
-	path = .vim/bundle/vim-bufkill
-	url = https://github.com/qpkorr/vim-bufkill.git
-        ignore = dirty
+    path = .vim/bundle/vim-bufkill
+    url = https://github.com/qpkorr/vim-bufkill.git
+    ignore = dirty
 [submodule ".vim/bundle/targets.vim"]
-	path = .vim/bundle/targets.vim
-	url = git://github.com/wellle/targets.vim.git
+    path = .vim/bundle/targets.vim
+    url = git://github.com/wellle/targets.vim.git
 [submodule ".vim/bundle/vim-repeat"]
-	path = .vim/bundle/vim-repeat
-	url = https://github.com/tpope/vim-repeat.git
+    path = .vim/bundle/vim-repeat
+    url = https://github.com/tpope/vim-repeat.git
 [submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
+    path = .vim/bundle/vim-surround
+    url = https://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/indentLine"]
-	path = .vim/bundle/indentLine
-	url = https://github.com/Yggdroot/indentLine.git
+    path = .vim/bundle/indentLine
+    url = https://github.com/Yggdroot/indentLine.git
+[submodule ".vim/bundle/deoplete.nvim"]
+    path = .vim/bundle/deoplete.nvim
+    url = https://github.com/Shougo/deoplete.nvim.git
+[submodule ".vim/bundle/deoplete-jedi"]
+    path = .vim/bundle/deoplete-jedi
+    url = https://github.com/zchee/deoplete-jedi.git
+[submodule ".vim/bundle/ctrlp"]
+    path = .vim/bundle/ctrlp
+    url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".vim/bundle/nerdtree"]
+    path = .vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/jedi-vim"]
+    path = .vim/bundle/jedi-vim
+    url = https://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/bundle/solarized"]
+	path = .vim/bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
