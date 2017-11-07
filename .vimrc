@@ -60,6 +60,7 @@ autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set rtp+=/usr/local/opt/fzf
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
@@ -88,6 +89,12 @@ map <leader>jq :%!jq '.'<CR>
 
 "Diff the unsaved changes
 map <leader>diff :w !diff % -<CR>
+
+"Fuzzy-find files
+map <leader>f :Files<CR>
+
+"Ag-find
+map <leader>ag :Ag<CR>
 
 map <C-c> :BD<cr>
 
